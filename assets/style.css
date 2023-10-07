@@ -1,0 +1,912 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #010101;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.displayFlex{
+    display: flex;
+}
+
+.alignCenter{
+    align-items: center;
+}
+.alignStart{
+    align-items: flex-start;
+}
+.alignEnd{
+    align-items: flex-end;
+}
+
+.justifyCenter{
+    justify-content: center;
+}
+.justifyStart{
+    justify-content: flex-start;
+}
+.justifyEnd{
+    justify-content:flex-end ;
+}
+.justifyBetween{
+    justify-content: space-between;
+}
+.justifyEvently{
+    justify-content: space-evenly;
+}
+
+/* Navbar CSS */
+.navbar{}
+.navbar .container{
+    padding: 30px 0;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+.navLogo img{
+    width: 180px;
+}
+.mainManuList li a{
+    color: #797979;
+    display: inline-block;
+    margin: 0 18px;
+    font-weight: 400;
+    transition: .4s;
+    font-size: 16px;
+}
+.mainManuList li a:hover{
+    color: #0097C5;
+}
+.globalBtn{
+    padding: 10px 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+    transition: .4s;
+    cursor: pointer;
+}
+.navButton a{
+    color: #fff;
+    background: #00bfea;
+}
+.navButton a:hover{
+    background: #0097C5;
+}
+
+/* Hero Area CSS */
+.heroArea{}
+.heroArea .container{
+    padding: 100px 0;
+}
+.heroContent{
+    max-width: 50%;
+}
+.heroImage{
+    max-width: 50%;
+}
+.trasted100{
+    background:#F0F0F0;
+    padding: 0 5px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 10px;
+    margin-bottom: 25px;
+}
+.trasted100 span{
+    padding: 7px;
+    color: #fff;
+    background: #04789b;
+    margin-right: 5px;
+    border-radius: 15px;
+    position: relative;
+    left: -5px;
+}
+.heroInnerText h2{
+    font-size: 54px;
+}
+.heroInnerText p{
+    color: #606b7b;
+    line-height: 25px;
+    font-size: 18px;
+    margin: 30px 0;
+}
+.learnmoreBtn{
+    color: #fff;
+    background: #00bfea;
+    margin-right: 20px;
+}
+.learnmoreBtn:hover{
+    background: #0097C5 ;
+}
+.startnowBtn{
+    color: #010101;
+    border: 1px solid #ece6e6;
+}
+.startnowBtn:hover{
+    background: #ECECEC;
+}
+
+/* Brands Logo CSS */
+.brandsLogo {}
+.brandsLogo .container {
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset; 
+    padding: 20px 0;
+}
+.brandsLogo .container img{
+    margin: 0 5px;
+    border-radius: 10px;
+}
+.brandsLogo .container img:hover {
+    background: #ECECEC;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+}
+.marquee {
+    white-space: nowrap;
+    animation: marquee 18s linear infinite; 
+}
+.marquee-container:hover .marquee {
+    animation-play-state: paused;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* group heading css */
+.groupContainer{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.groupSectionTitle{
+    padding: 100px 0;
+}
+.groupSectionTitle .container{
+}
+.groupHeading{
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.gradient-text {
+    background: (linear, left top, right top, from(#003249), color-stop(51%, #0cdcff), to(#003249));
+    background: -o-linear-gradient(left, #003249 0%, #0cdcff 51%, #003249 100%);
+    background: linear-gradient(to right, #003249 0%, #0cdcff 51%, #003249 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Group 1 Css */
+.groupImage{
+    display: flex;
+    justify-content: flex-end;
+}
+.groupImage img{
+    width: 65%;
+    border: 1px solid #ece6e6;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .4s;
+}
+.groupImage img:hover{
+    border-color: #0cdcff;
+}
+.numberImg{
+    position: relative;
+    display: inline-block;
+}
+.numberImg img{
+    width: 60px;
+    height: 60px;
+}
+.number{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+}
+.groupInnerText{
+    margin-bottom: 15px;
+}
+.groupStepHeading{
+    margin:20px 0 ;
+    font-weight: 600;
+    font-size: 24px;
+}
+.groupPragraph{
+    font-size: 18px;
+    color: #606b7b;
+}
+.w-50{
+    max-width: 50%;
+}
+.groupLearnMoreBtn{
+    color: #fff;
+    background: #00bfea;
+}
+.groupLearnMoreBtn:hover{
+    background: #0097C5;
+    transition: .4s;
+}
+.groupLearnMoreBtn span{
+    margin-left: 5px;
+}
+.groupLearnMoreBtn:hover .arrowIcon{
+    transition: .4s;
+    padding: 10px 3px;
+}
+.eachGroupSectionBottomImage{ 
+    text-align: center;
+}
+.groupContentLast{
+    order: 2;
+}
+.groupImageFirst{
+    order: 1;
+    justify-content: flex-start;
+}
+
+/* Sbuscribe Section CSS */
+.subscribeSection{
+    padding: 100px 0;
+}
+.subscribeSection .container{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 40px 20px  40px 40px;
+    position: relative;
+    flex-wrap: wrap;
+}
+.subscribeContent{
+    background: #02344A;
+    padding: 30px;
+    margin-left: 20px;
+}
+.subsImg {
+    text-align: center;
+}
+.subsImg img {
+    width: 50px;
+    height: 55px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.subsContent{
+    color: #fff;
+}
+.subsContent h2{
+    margin: 20px 0;
+    font-size: 32px;
+    font-weight: 600;
+}
+.subsContent p{
+    font-size: 18px;
+    color: lightgray;
+}
+.subscribeForm{
+    display: flex;
+    justify-content: flex-start;
+}
+.subFormCard{
+    padding: 30px 30px 50px 30px;
+    border-radius: 5px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    margin-top: 20px;
+}
+.subFormCard h3{
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.subCardSInput input{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #ece6e6;
+    padding: 10px;
+    width: 270px;
+    margin-right: 20px;
+}
+.subCardSInput input:focus{
+    border-color: #010101;
+}
+.subCardSInput a{
+    background: #00bfea;
+    color: #fff;
+}
+.subCardSInput a:hover{
+    background: #0097C5;
+}
+.subBg img{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    right:-5px;
+    z-index: -1;
+}
+
+/* Pricing Section CSS */
+.pricingSection .container{
+    background:#EAFCFC;
+    padding: 50px;
+    border-radius: 10px;
+}
+.pricingContent{
+    padding: 20px 10px;
+    background: #fff;
+    width: 45%;
+    border: 1px solid #cafcff;
+}
+.pricing{
+    width: 45%;
+}
+.pContentInnerText h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.pContentInnerText p{
+    border-top: 5px solid #007EA7;
+    padding: 15px 10px;
+    font-size:18px ;
+    color: lightgray;
+    background: #02344A;
+}
+.whyChoose{
+    margin: 50px 0;
+}
+.whyChooseList li{
+    margin-bottom: 10px;
+}
+.whyChooseList li span{
+    margin-right: 7px;
+}
+.whyChooseList li a{
+    color: #02344a;
+}
+.getStartedBtn{
+    background:#00bfea ;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+}
+.getStartedBtn:hover{
+    background: #0097C5;
+}
+.pricingCard{
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border-left: 5px solid #007EA7;
+    margin-bottom: 10px;
+    transition: .4s;
+    cursor: pointer;
+}
+.pricingCard:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.pricingCardText{
+    width: 67%;
+}
+.pricingCardText h3{
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.pricingCardText p{
+    color: rgb(81, 81, 81);
+    font-size: 14px;
+}
+.priceRateWrapper{
+    width: 33%;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+}
+.pricingRate{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px 5px;
+    border-radius: 5px;
+    background: #02344A;
+}
+.globalSectionHeadingLikeBtn{
+    display: flex;
+    justify-content: center;
+}
+.globalSectionHeadingLikeBtn span{
+    display: inline-block;
+    margin: 50px 0;
+    background:#EAFCFC ;
+    padding: 7px 14px;
+    color: #02344A;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 7px;
+}
+.boxShadowBottom .container{
+    background: #fff;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    margin-bottom: 50px;
+}
+
+/* Testi Section CSS */
+.testimonialSection{
+    margin-bottom: 120px;
+}
+.testimonialSection .container{
+    flex-wrap: wrap;
+}
+.testipreface{
+    width: 40%;
+}
+.tPrefaceImg{
+    display: flex;
+    justify-content: center;
+    margin-bottom:20px ;
+}
+.tPrefaceImg img{
+    width: 100px;
+}
+.tPrefaceText h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.tPrefaceText p{
+    font-size: 18px;
+    color: #797979;
+}
+.testiCarousel{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+.tCarosulItem{
+    width: 590px;
+    background:#02344A ;
+    padding: 20px 30px 10px 20px;
+    position: relative;
+}
+.singleCarousel:hover .corouselImg img{
+    border: 1px solid #0CDCFF;
+}
+.corouselImg{
+    margin-bottom: 15px;
+}
+.corouselImg img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.carouselBody p{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.carouselBody h5{
+    font-weight: 600;
+    color: #0CDCFF;
+    margin-bottom: -25px;
+}
+.carouselBody .carouselStar h6 {
+    font-size: 14px;
+    color: #b8b7b7;
+}
+.carouselBody .carouselStar img {
+    width: 110px;
+    height: auto;
+}
+
+.slick-arrow{
+    border: none;
+    outline: none;
+    background: #00bfea;
+    position: absolute;
+    bottom: -25%;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    transition: .4s;
+    cursor: pointer;
+}
+.slick-arrow:hover{
+    background: #0097C5;
+}
+.slick-next{
+    right: 0;
+}
+.slick-prev{
+    right: 15%;
+}
+ul.slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom:-18px ;
+    right:20px;
+    width: 590px;
+    border-radius: 5px;
+}
+ul.slick-dots li{
+    width: 25%;
+    height: 3px;
+    background: #b8b7b78a;
+    cursor: pointer;
+}
+ul.slick-dots li button{
+    border: none;
+    outline: none;
+    background: none;
+    text-indent: -99999px;
+    transition: .4s;
+}
+ul.slick-dots li.slick-active{
+    background: #0CDCFF;
+}
+
+/* FAQ section CSS */
+.faqSection{
+    padding: 100px 0;
+}
+.faqSection .container{
+    max-width: 680px;
+}
+.faqTitle{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.faqTitle h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+.faqTitle h1 span{
+    color: #00bfea;
+    text-decoration: underline;
+}
+.faqAccordions{
+    border: 1px solid #0cdbffb4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.accordionTitle{
+    padding: 18px 20px;
+    background: #02344A;
+    color: #ECECEC;
+    transition: .4s;
+}
+.tabActive{
+    background: #EAFEFF;
+    color:#010101;
+}
+.accordionTitle:hover{
+    background: #EAFEFF;
+    color:#010101;
+}
+.accordionTitle h4{
+    font-size: 18px;
+    font-weight: 400;
+}
+.accordionTitle span{
+    font-size: 22px;
+    color: #0097C5;
+}
+.accordionContent{
+    display: none;
+}
+.accordionContent1{
+    display: block;
+}
+.accordionContent p{
+    padding: 20px;
+    color: #797979;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Contract Section CSS */
+.contractSection{
+    background: #F9F9F9;
+    padding: 50px 0;
+}
+.contractTitle{
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.contractTitle h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.contractTitle p{
+    font-size: 18px;
+    color: #797979;
+    line-height: 24px;
+}
+.contractSection .container{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contractInfo{
+    width: 35%;
+}
+.contractCard{
+    background: #EAFEFF;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #0cdbffb4;
+}
+.contractCard h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.cInnerCard{
+    padding: 10px;
+    border-left: 5px solid #007EA7;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    margin-bottom: 30px;
+    background: #fff;
+}
+.cInnerCard p{
+    color: #003249;
+}
+.contractItemList li{
+    margin-bottom: 10px;
+    color: #02344A;
+}
+.contractItemList li span{
+    margin-right:5px ;
+}
+.customatSupport{
+    display: flex;
+    justify-content: center;
+}
+.customatSupport img{
+    width: 250px;
+}
+
+.contractForm{
+    width: 65%;
+    margin-left: 10%;
+}
+.inputButton{
+    padding: 10px 12px;
+    border: none;
+    outline: none;
+    border: 1px solid #d8d7d7b4;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+}
+.inputButton:focus{
+    box-shadow: rgba(14, 170, 209, 0.185) 0px 4px 12px;
+    border: 1px solid #131d2071;
+}
+label{
+    display: block;
+}
+.nameWrapper{
+    flex-grow:2 ;
+}
+.emailWrapper{
+    flex-grow:1;
+}
+.nameEmailWrap{
+    margin-bottom: 10px;
+}
+.nameInput{
+    width: 80%;
+    font-size: 16px;
+}
+.emailInput{
+    width: 100%;
+    font-size: 16px;
+}
+.subjectInput{
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+.messageBox{
+    font-family: 'Lato', 'San-sarif';
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contractFormSubmitBtn{
+    display: block;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #00bfea;
+    padding: 10px 16px;
+}
+.contractFormSubmitBtn:hover{
+    background: #0097C5;
+}
+
+/* Footer Section CSS */
+.footerArea{
+    background: #02344A;
+    padding: 64px 0 52px 0;
+}
+.footerArea .container{}
+.aboutUs{
+    max-width: 35%;
+}
+.footerTitle{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.aboutUs p{
+    color: rgb(202, 199, 199);
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 16.5px;
+}
+.footerLinks{
+    max-width: 45%;
+}
+.footerItem li a{
+    color: rgb(216, 216, 216);
+    margin-bottom: 12px;
+    display: inline-block;
+    transition: .4s;
+}
+.footerItem li a:hover{
+    color: #007EA7;
+    text-decoration: underline;
+}
+.quickLink{
+    margin-right: 110px;
+}
+.footerSubscribeForm{
+    max-width: 20%;
+}
+.footerForm{
+    display: flex;
+    flex-direction: column;
+}
+.footerEmailInputBtn{
+    padding: 10px;
+    max-width: 220px;
+    border: none;
+    outline: none;
+    background:#1D4558;
+    color: #fff;
+    text-align: start;
+    border-radius: 33px;
+    border: 1px solid #1D4558 ;
+}
+.footerEmailInputBtn:focus{
+    border: 1px solid #ebebeb;
+}
+.subscribeFooterBtn{
+    background: #00bfea;
+    padding: 10px 16px;
+    border-radius: 33px;
+    max-width: 220px;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin: 20px 0;
+}
+.subscribeFooterBtn:hover{
+    background: #0097C5;
+}
+.fCheckAndText input{
+    margin-right: 5px;
+}
+.fCheckAndText span{
+    color: #b8b7b7;
+    font-size: 14px;
+}
+.footerItem li span{
+    color: #007EA7;
+    margin-right: 10px;
+}
+/* Footer bottom */
+.footerBottom{
+    background: #02344A;
+    border-top: 1px solid #245265;
+}
+.fBottomLogo img{
+    max-width: 180px;
+}
+.fBottomCopyright p{
+    color: #f7f6f6;
+    font-size: 14px;
+}
+.fBottomCopyright p a{
+    color: #00bfea;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+/* Display fixed CSS */
+/* Chst Section CSS */
+.letsChat{
+    position: fixed;
+    right: 20px;
+    bottom: 20%;
+    background:#F1F1F1 ;
+    border-radius: 33px;
+    padding: 0 25px 0 0;
+    cursor: pointer;
+}
+.letsChat img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.letsChat h5{
+    color: #010101;
+    margin: 0 10px;
+}
+#letsChatX{
+    cursor: pointer;
+    color: #797979;
+    font-weight: 600;
+}
+#letsChatX:hover{
+    color: rgba(218, 52, 52, 0.918);
+}
+
+/* Coupon Section CSS */
+.couponItem{
+    background: #fff;
+    padding: 2px 12px;
+    border-radius: 5px;
+    position: fixed;
+    top: 30%;
+    right: -20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transform: rotate(270deg);
+}
+.couponItem img{}
+.couponItem a{
+    color: #606b7b;
+}
