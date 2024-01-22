@@ -12,6 +12,7 @@ body{
 .container{
     max-width: 1180px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 img{
     max-width: 100%;
@@ -57,6 +58,7 @@ a{
 .navbar .container{
     padding: 30px 0;
     box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    gap: 20px;
 }
 .navLogo img{
     width: 180px;
@@ -906,7 +908,57 @@ label{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     transform: rotate(270deg);
 }
-.couponItem img{}
+
 .couponItem a{
     color: #606b7b;
 }
+
+.hide{
+    display: none;
+}
+/* responsive */
+@media screen and (max-width:600px) {
+    .navbar .container,
+    .heroArea .container,
+    .groupContainer,
+    .subscribeSection .container,
+    .pricingSection .container,
+    .testimonialSection .container
+    {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 20px;
+    }
+    .heroContent,
+    .heroImage,
+    .w-50,
+    .groupImage,
+    .pricingContent,
+    .pricing
+    {
+        max-width: 100%;
+    }
+    .pricingContent,
+    .pricing,
+    .testipreface,
+    ul.slick-dots
+    {
+        width: 100%;
+    }
+    .groupImage,
+    .testiCarousel
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .subBg{
+        display: none;
+    }
+    .tCarosulItem{
+        max-width: 90vw;
+    }
+    .slick-prev {
+        margin-right: 10px;
+    }
+}
+
